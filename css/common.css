@@ -1,0 +1,180 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+body,div,dl,dt,dd,ul,ol,li,menu,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'돋움',dotum,sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var    {font-style:normal;font-weight:normal}
+
+.wrapper{}
+
+.header{
+    position: fixed;
+    width: 100%;
+    padding:0px 15px 0px 0px;
+    background-color: #333;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+    z-index: 9999;
+    line-height: 48px;
+}
+
+.header a{
+    color:#fff;
+    display: block;
+}
+
+.header-left{
+    float: left;
+    width:auto;
+    padding-left:18px;
+    padding-right:28px;
+    border-radius: 0 45px 45px 0;
+    background-color: #0066D3;
+}
+
+.logo{
+    float:left;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header-right{
+    float: right;
+}
+.gnb, .gnb-menu, .gnb-menu-item{
+    float:left;
+}
+
+.gnb-menu-item a{
+    position: relative;
+    height: 48px;
+    display: block;
+    padding:0 6px 0 6px;
+    border-bottom: 1px solid #333;
+    letter-spacing: 1px;
+    font-size:12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#bbb;
+}
+
+.gnb-menu-item a:hover{
+    color:#fff;
+    background-color:#2d2d2d;
+    border-bottom: 3px solid #fff;
+}
+
+a.btn-search{
+    border-left:1px solid #333;
+    border-right:1px solid #333;
+    width: 48px;
+    display: block;
+    position: relative;
+    right: auto;
+    top: auto;
+    text-align: center;
+    float:left;
+    font-size: 16px;
+    color:#b3b3b3;
+}
+
+a.btn-search:hover{
+    color:#fff;
+    background-color:#2d2d2d;
+}
+
+.container{
+    width:100%;
+}
+
+.content, .aside{
+    padding-top: 49px;
+}
+
+.content{
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.aside{
+    margin-right: -320px;
+    position:relative;
+    width:320px;
+    min-height:720px;
+    float:right;
+    background-color: #fafafa;
+    border-left:1px solid #eee;
+}
+
+.aside-module{
+    clear:both;
+    position:relative;
+    margin:25px;
+}
+
+.snb a{
+    padding:2px 0px;
+    display: block;
+}
+
+.snb > ul >li{
+    border-bottom:1px solid #ddd;
+}
+
+
+.footer{
+    clear:both;
+
+    height: 70px;
+    border-top:1px solid #eee;
+}
+
+
+@media (min-width: 992px){
+    .header{
+    }
+
+    .container{
+        width:100%;
+    }
+    #main{
+        margin-right: 320px;
+    }
+
+    .content{
+        position:relative;
+        width:100%;
+        min-height:720px;
+        float: left;
+    }
+
+    .aside{
+
+        display: block;
+    }
+
+    .footer{
+    }
+}
+
+@media (max-width: 991px) {
+    .aside{
+        display: none;
+    }
+}
